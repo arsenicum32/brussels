@@ -52,7 +52,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 let Video = ({src,tags,onEnd , nextLoad})=> (
   <div className="vid">
     <video
-      src={`http://localhost:4000/${src.src}.mp4`}
+      src={`${DOMAIN}/${src.src}.mp4`}
       autoPlay
       className="videoFrame"
       type="video/mp4"
@@ -60,7 +60,7 @@ let Video = ({src,tags,onEnd , nextLoad})=> (
     ></video>
     <video
       className="videoFrame back"
-      src={`http://localhost:4000/${src.next}.mp4`}
+      src={`${DOMAIN}/${src.next}.mp4`}
       autoPlay
       type="video/mp4"
       volume="0"

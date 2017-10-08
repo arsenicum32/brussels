@@ -37,8 +37,7 @@ let App = ({video, onOpen, splash}) => (
       </div>
       {
         video == undefined ?
-        <Splash />
-        :
+        <Splash />:
         video ? <Video /> : <Setup />
       }
     </div>
