@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps)=>({
   paginator: state.src.paginator
 })
 const mapDispatchToProps = dispatch =>({
-  setPaginator: (page)=> {
+  setPaginator: page=> {
     dispatch(TurnPage(page))
   }
 })
