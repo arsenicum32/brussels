@@ -1,0 +1,89 @@
+H = 120px
+
+
+a
+  color black
+  text-decoration none
+  font-family Helvetica Neue
+  //font-weight bold
+h1
+video
+div
+span
+p
+  margin 0
+  //margin-top 12px
+h1
+  margin-top 10px
+  font-weight 800
+  font-size 2.7em
+  cursor pointer
+body
+  margin 0
+  overflow hidden
+  height 100vh
+  font-family Helvetica Neue
+  .video
+    width 800px
+    margin-left calc(50vw - 400px)
+    .videoFrame
+      position absolute
+      top H
+      width inherit
+      z-index -1
+      border 4px solid white
+    .back
+      position absolute
+      left calc(50vw - 400px + 2px)
+      z-index -2
+      top H
+    .vid
+      width inherit
+    .controls
+      height 120px
+      width inherit
+      a
+        float right
+        position relative
+        font-size 6em
+        display block
+        transform scaleX(-1)
+        top calc( -100px  + 100px )
+        //border-bottom 2px solid red
+        &:hover
+          //border-bottom 2px solid black
+.field
+  width 700px
+  display flex
+  flex-wrap wrap
+  position relative
+  top 20px
+  a
+    font-size 2em
+    margin-right 40px
+    width 60px
+
+.item
+  font-weight 400
+  display block-inline
+
+.pages
+  margin-top 80px
+  a
+    margin-right 20px
+    font-weight 800
+.frames
+  display flex
+  flex-direction row
+  width inherit
+  height 40px
+  margin-top 20px
+  .itemFrames
+    margin-right 10px
+
+@media (orientation: portrait)
+  .video
+    width 100vw
+    margin-left 0
+    .videoFrame
+      width inherit
