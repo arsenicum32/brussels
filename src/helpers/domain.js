@@ -1,3 +1,3 @@
-const DOMAIN = 'http://localhost:4000'
+const DOMAIN = 'http://penchat.me/brussels/src/media'
 
 export default DOMAIN
